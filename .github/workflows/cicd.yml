@@ -57,7 +57,8 @@ jobs:
             libflac-dev \
             libvorbis-dev \
             libgl1-mesa-dev \
-            libegl1-mesa-dev
+            libegl1-mesa-dev \
+            libfreetype-dev
       
       - name: Configure CMake
         # Настройки аналогичны Windows-сборке
