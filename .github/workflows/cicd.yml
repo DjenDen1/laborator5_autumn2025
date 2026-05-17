@@ -22,7 +22,9 @@ jobs:
           }
 
       - name: Configure CMake
-        run: cmake -S . -B build
+        # -S 05 указывает на папку с исходниками и CMakeLists.txt
+        # -B build указывает на папку build в корне (05_2/build)
+        run: cmake -S 05 -B build
 
       - name: Build with CMake
         run: cmake --build build --config Release
@@ -31,6 +33,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: windows-build
+          # Так как build в корне, путь остается прежним
           path: build/Release/physics.exe 
 
   build-linux:
@@ -48,7 +51,8 @@ jobs:
           sudo apt-get install -y build-essential cmake
       
       - name: Configure CMake
-        run: cmake -S . -B build
+        # Настройки аналогичны Windows-сборке
+        run: cmake -S 05 -B build
       
       - name: Build project
         run: cmake --build build --config Release
@@ -57,6 +61,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: linux-build
+          # Путь в корневом каталоге сборки
           path: build/physics
 
   create-release:
