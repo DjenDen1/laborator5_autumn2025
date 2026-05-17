@@ -1,0 +1,13 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/CPP2025/lab5/05_2/build/cmake_install.cmake",
+		"C:/CPP2025/lab5/05_2/build/_deps/sfml-build/cmake_install.cmake",
+		"C:/CPP2025/lab5/05_2/build/_deps/sfml-build/src/SFML/cmake_install.cmake",
+		"C:/CPP2025/lab5/05_2/build/_deps/sfml-build/src/SFML/System/cmake_install.cmake",
+		"C:/CPP2025/lab5/05_2/build/_deps/sfml-build/src/SFML/Main/cmake_install.cmake",
+		"C:/CPP2025/lab5/05_2/build/_deps/sfml-build/src/SFML/Window/cmake_install.cmake",
+		"C:/CPP2025/lab5/05_2/build/_deps/sfml-build/src/SFML/Graphics/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
